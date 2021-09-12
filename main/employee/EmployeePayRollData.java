@@ -1,7 +1,7 @@
 package employee;
 public class EmployeePayRollData {
     /**
-     * Instance variable id, name salary
+     * Instance variable id, name saalary
      */
     int id;
     String name;

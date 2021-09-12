@@ -39,7 +39,7 @@ public class EmployeePayRollService {
     }
 
     /**
-     * to Write into the Console
+     * to Write into the Consolee
      */
     private void writeEmployeePayRollData() {
         System.out.println("\n Writing Employee Payroll Roster to Console\n" + employeePayRollList);
