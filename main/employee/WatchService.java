@@ -45,6 +45,10 @@ public class WatchService {
         });
     }
 
+    /**
+     * process all the events for keys queued to the watcher
+     */
+    @SuppressWarnings({ "rawTypes", "unchecked", "rawtypes" })
     public void processEvents() {
         while (true) {
             WatchKey key;
