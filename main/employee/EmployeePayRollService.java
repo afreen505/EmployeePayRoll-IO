@@ -1,7 +1,9 @@
 package employee;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 
 public class EmployeePayRollService {
     public enum IOService {
@@ -36,10 +38,11 @@ public class EmployeePayRollService {
         System.out.println("Please Enter Employee Salary");
         double salary = consoleInputReader.nextDouble();
 
+        employeePayRollList.add(new EmployeePayRollData(id, name, salary));
     }
 
     /**
-     * to Write into the Consolee
+     * to Write into the Console
      */
     private void writeEmployeePayRollData() {
         System.out.println("\n Writing Employee Payroll Roster to Console\n" + employeePayRollList);
@@ -59,4 +62,3 @@ public class EmployeePayRollService {
         employeePayRollService.writeEmployeePayRollData();                  // writing back to console
     }
 }
-
