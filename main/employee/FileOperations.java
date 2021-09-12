@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  * IN this class operating different functions, like deleting , existent checking ext
  */
 public class FileOperations {
-    private static final String HOME = System.getProperty("Path", "C:\\Users\\PLAY_WITH_NIO");
+    private static final String HOME = System.getProperty("Path", "C:\\Users\\Afreen\\Employee_Payroll_IO");
     private static final String PLAY_WITH_NIO = "TempPlayGround";
 
     public void fileOperationDemonstrator() throws IOException {
@@ -32,7 +32,7 @@ public class FileOperations {
 
         //Create File
         IntStream.range(1, 10).forEach(counter -> {
-            Path tempFile = Paths.get(playPath + "\\temp" + counter);
+            Path tempFile = Paths.get(playPath + "\\temp" + counter + ".txt");
             System.out.println("is tempFile exists?1" + Files.notExists(tempFile));
             try {
                 Files.createFile(tempFile);
